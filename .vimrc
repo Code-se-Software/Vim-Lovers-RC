@@ -1,9 +1,9 @@
 syntax on
 
+set encoding=UTF-8
 set guicursor=
-set noshowmatch
-set nohlsearch
 set hidden
+set hlsearch
 set noerrorbells
 set tabstop=2 softtabstop=2
 set shiftwidth=2
@@ -24,7 +24,6 @@ set incsearch
 set scrolloff=8
 set shortmess+=c
 set updatetime=300
-set termguicolors
 
 call plug#begin()
   Plug 'tpope/vim-commentary'
@@ -44,6 +43,7 @@ call plug#begin()
   Plug 'vim-airline/vim-airline-themes'
   Plug 'voldikss/vim-floaterm'
   Plug 'mhinz/vim-startify'
+  Plug 'chrisbra/Colorizer'
   " Typescript setup
   Plug 'pangloss/vim-javascript'
   Plug 'leafgarland/typescript-vim'
@@ -51,6 +51,8 @@ call plug#begin()
   Plug 'Quramy/tsuquyomi'
   Plug 'Quramy/tsuquyomi-vue'
   Plug 'wsdjeg/vim-todo'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'vim-scripts/grep.vim'
 call plug#end()
 
 set background=dark
